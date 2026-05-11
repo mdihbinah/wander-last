@@ -26,7 +26,7 @@ const AddDestinationPage = () => {
             <form onSubmit={onSubmit}
             className="p-10 space-y-8 w-3xl"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 shadow-2xl rounded-xl px-4 py-5">
               {/* Destination Name */}
               <div className="md:col-span-2">
                 <TextField name="destinationName" isRequired>
@@ -149,7 +149,7 @@ const AddDestinationPage = () => {
               type="submit"
               variant="outline"
             //   isLoading={isPending}
-              className=" rounded-none w-full bg-cyan-500 text-white"
+              className="rounded-full w-full bg-cyan-500 text-white"
             >
               {/* {isPending ? "Adding Package..." : "Add Travel Package"} */}
               Add Destination
